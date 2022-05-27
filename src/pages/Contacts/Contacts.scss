@@ -1,0 +1,93 @@
+@use './node_modules/include-media/dist/include-media' as *;
+@use '../../assets/scss/vars' as *;
+@use '../../assets/scss/mixins' as *;
+
+.contacts {
+  @include box-shadow-inset();
+  @include white-text();
+
+  padding: var(--content-padding-block) var(--content-padding-inline);
+  transform-origin: top;
+  will-change: transform;
+
+  &_highlighted {
+    animation: contacts-animation 1000ms var(--animation-shape);
+  }
+
+  &__title {
+    text-align: center;
+    font-weight: 600;
+  }
+
+  &__phone {
+    white-space: nowrap;
+  }
+
+  p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+  }
+
+  &__label {
+    @include media("<sm") {
+      text-align: center;
+    }
+
+    text-shadow: 0 0 4px rgba(black, 80%);
+    font-weight: 600;
+    color: #c0a0ff;
+  }
+
+  &__value {
+    @include media("<sm") {
+      text-align: center;
+      margin-bottom: 12px;
+    }
+
+    padding-left: 5px;
+    display: flex;
+    flex-direction: column;
+
+    *:not(:last-child) {
+      margin-right: 5px;
+    }
+
+    @media screen and (min-width: $breakpoint-sm) {
+      flex-direction: row;
+    }
+  }
+
+  @media screen and (min-width: $breakpoint-sm) {
+    p {
+      flex-direction: row;
+    }
+  }
+}
+
+@keyframes contacts-animation {
+  0% {
+    transform: rotateX(0deg);
+  }
+
+  20% {
+    transform: rotateX(-20deg);
+  }
+
+  40% {
+    transform: rotateX(10deg);
+  }
+
+  60% {
+    transform: rotateX(-5deg);
+  }
+
+  80% {
+    transform: rotateX(3deg);
+  }
+
+  100% {
+    transform: rotateX(0);
+  }
+}

@@ -1,0 +1,47 @@
+@use "./node_modules/include-media/dist/include-media" as *;
+@use "../../../assets/scss/vars" as *;
+
+.my-sider-outside {
+  @include media(">=lg") {
+    display: none;
+  }
+
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+}
+
+.my-sider {
+  @include media(">=lg") {
+    display: none;
+  }
+
+  .ant-anchor-ink {
+    &::before {
+      display: none;
+    }
+  }
+
+  .ant-menu-inline {
+    width: 203px !important;
+  }
+
+  .ant-anchor-link {
+    position: relative;
+    padding: 0;
+
+    a {
+      display: block;
+      padding: 16px 0 16px 16px;
+      color: white;
+    }
+  }
+
+  .ant-anchor-ink-ball {
+    display: none !important;
+  }
+}

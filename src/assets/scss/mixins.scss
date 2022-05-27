@@ -1,0 +1,42 @@
+@mixin box-shadow() {
+  box-shadow:
+    0 0 0.3px  rgba(0, 0, 0, 0.034),
+    0 0 0.7px  rgba(0, 0, 0, 0.051),
+    0 0 1.2px  rgba(0, 0, 0, 0.063),
+    0 0 1.7px  rgba(0, 0, 0, 0.073),
+    0 0 2.5px  rgba(0, 0, 0, 0.082),
+    0 0 3.5px  rgba(0, 0, 0, 0.091),
+    0 0 5px    rgba(0, 0, 0, 0.1),
+    0 0 7.3px  rgba(0, 0, 0, 0.111),
+    0 0 11.3px rgba(0, 0, 0, 0.126),
+    0 0 20px   rgba(0, 0, 0, 0.16);
+}
+
+@mixin box-shadow-inset() {
+  box-shadow:
+    inset 0 0 0.3px  rgba(0, 0, 0, 0.034),
+    inset 0 0 0.7px  rgba(0, 0, 0, 0.051),
+    inset 0 0 1.2px  rgba(0, 0, 0, 0.063),
+    inset 0 0 1.7px  rgba(0, 0, 0, 0.073),
+    inset 0 0 2.5px  rgba(0, 0, 0, 0.082),
+    inset 0 0 3.5px  rgba(0, 0, 0, 0.091),
+    inset 0 0 5px    rgba(0, 0, 0, 0.1),
+    inset 0 0 7.3px  rgba(0, 0, 0, 0.111),
+    inset 0 0 11.3px rgba(0, 0, 0, 0.126),
+    inset 0 0 20px   rgba(0, 0, 0, 0.16);
+}
+
+@mixin white-text() {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(black, 80%);
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #fff;
+    text-shadow: 4px 4px 4px rgba(black, 60%);
+  }
+}

@@ -1,0 +1,23 @@
+@use './assets/scss/vars' as *;
+
+.ant-layout.app {
+  padding: calc(var(--header-height)) 0 0 0;
+  background: transparent;
+
+  &::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
+}
+
+.app {
+  &__perspective {
+    perspective: 800px;
+    overflow: hidden;
+  }
+}

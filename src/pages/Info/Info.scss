@@ -1,0 +1,128 @@
+@use './node_modules/include-media/dist/include-media' as *;
+@use '../../assets/scss/vars' as *;
+
+.info {
+  font-size: 14px;
+  text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.8);
+
+  @include media(">=sm") {
+    font-size: 16px;
+  }
+
+  @include media(">=md") {
+    font-size: 18px;
+  }
+
+  @include media(">=xl") {
+    font-size: 20px;
+  }
+
+  @include media(">=xxl") {
+    font-size: 22px;
+  }
+
+  &__title {
+    @include media("<lg") {
+      display: none;
+    }
+
+    text-align: center;
+    font-size: 48px;
+    position: relative;
+    line-height: 100%;
+    margin: 0;
+    font-weight: 700;
+    color: white;
+    padding-bottom: 16px;
+
+    &::first-letter {
+      color: red;
+    }
+
+    @include media("<xxl") {
+      font-size: 44px;
+    }
+
+    @include media("<xl") {
+      font-size: 40px;
+    }
+
+    @include media("<md") {
+      font-size: 36px;
+    }
+
+    @include media("<sm") {
+      font-size: 30px;
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+    padding: 48px 0;
+
+    @include media("<md") {
+      padding: 24px 0;
+    }
+  }
+
+  &__content {
+    p:last-child {
+      margin: 0;
+    }
+
+    @include media(">=md") {
+      justify-content: flex-start !important;
+    }
+
+    @include media(">=xl") {
+      justify-content: center !important;
+    }
+  }
+
+  &__logo-wrapper {
+    text-align: center;
+  }
+
+  &__logo {
+    width: 100%;
+    max-width: 200px;
+    filter: drop-shadow(20px 30px 20px rgba(0, 0, 0, 1));
+
+    @include media("<lg") {
+      //max-width: 200px;
+    }
+  }
+
+  &__content-wrapper {
+    color: white;
+    font-weight: 500;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url(../../assets/i/ny8rSuCji5E.webp);
+      background-repeat: no-repeat;
+      background-position: 30% 0;
+      background-size: 300%;
+      filter: brightness(0.2);
+
+      @include media(">=sm") {
+        background-size: 200%;
+      }
+
+      @include media(">=md") {
+        background-position: 10% 0;
+        background-size: 140%;
+      }
+
+      @include media(">=lg") {
+        background-size: 120%;
+        background-position: 0 10%;
+      }
+    }
+  }
+}
