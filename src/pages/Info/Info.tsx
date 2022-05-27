@@ -1,7 +1,7 @@
-import { Col, Row } from 'antd';
-import { standardGutter } from '../../shared/constants/gutter';
-import { Logo } from './Logo';
-import './Info.scss';
+import { Col, Row } from 'antd'
+import { standardGutter } from '../../shared/constants/gutter'
+import { Logo } from './Logo'
+import './Info.scss'
 
 
 export const Info = () => (
@@ -67,4 +67,4 @@ export const Info = () => (
       </div>
     </div>
   </section>
-);
+)

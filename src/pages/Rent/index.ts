@@ -1,1 +1,1 @@
-export { Rent } from './Rent';
+export { Rent } from './Rent'

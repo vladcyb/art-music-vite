@@ -1,23 +1,23 @@
-import { Col, Row } from 'antd';
-import { standardGutter } from '../../shared/constants/gutter';
-import { useEffect, useState } from 'react';
-import classNames from 'classnames';
-import './Contacts.scss';
+import { Col, Row } from 'antd'
+import { standardGutter } from '../../shared/constants/gutter'
+import { useEffect, useState } from 'react'
+import classNames from 'classnames'
+import './Contacts.scss'
 
 export const Contacts = () => {
-  const [highlighted, setHighlighted] = useState(false);
+  const [highlighted, setHighlighted] = useState(false)
 
   const highlight = () => {
-    setTimeout(() => setHighlighted(true), 200);
-    setTimeout(() => setHighlighted(false), 1200);
-  };
+    setTimeout(() => setHighlighted(true), 200)
+    setTimeout(() => setHighlighted(false), 1200)
+  }
 
   useEffect(() => {
-    const contactsLink = document.querySelector('.my-header__contacts');
-    contactsLink?.addEventListener('click', highlight);
+    const contactsLink = document.querySelector('.my-header__contacts')
+    contactsLink?.addEventListener('click', highlight)
 
-    return () => contactsLink?.removeEventListener('click', highlight);
-  }, []);
+    return () => contactsLink?.removeEventListener('click', highlight)
+  }, [])
 
   return (
     <footer
@@ -60,5 +60,5 @@ export const Contacts = () => {
         </Col>
       </Row>
     </footer>
-  );
-};
+  )
+}

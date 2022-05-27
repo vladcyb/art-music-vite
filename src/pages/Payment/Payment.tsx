@@ -1,6 +1,7 @@
-import { Col, Row } from 'antd';
-import { standardGutter } from '../../shared/constants/gutter';
-import './Payment.scss';
+import { Col, Row } from 'antd'
+import { standardGutter } from '../../shared/constants/gutter'
+import './Payment.scss'
+
 
 export const Payment = () => (
   <Row
@@ -45,4 +46,4 @@ export const Payment = () => (
       </ul>
     </Col>
   </Row>
-);
+)

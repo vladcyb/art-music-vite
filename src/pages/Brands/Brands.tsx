@@ -1,14 +1,14 @@
-import { Col, Row } from 'antd';
-import { standardGutter } from '../../shared/constants/gutter';
-import { ColProps } from 'antd/lib/grid/col';
-import './Brands.scss';
+import { Col, Row } from 'antd'
+import { standardGutter } from '../../shared/constants/gutter'
+import { ColProps } from 'antd/lib/grid/col'
+import './Brands.scss'
 
 const brandsColProps: ColProps = {
   xs: 24,
   md: 12,
   lg: 12,
   xl: 8,
-};
+}
 
 export const Brands = () => (
   <Row
@@ -71,4 +71,4 @@ export const Brands = () => (
     </Col>
     <Col xs={0} md={12} lg={12} />
   </Row>
-);
+)

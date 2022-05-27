@@ -1,1 +1,1 @@
-export { SiderAndHeader } from './SiderAndHeader';
+export { SiderAndHeader } from './SiderAndHeader'

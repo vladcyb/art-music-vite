@@ -1,10 +1,10 @@
-import { Anchor, Layout } from 'antd';
-import React, { useEffect } from 'react';
-import './MySider.scss';
+import { Anchor, Layout } from 'antd'
+import React, { useEffect } from 'react'
+import './MySider.scss'
 
 
-const { Sider } = Layout;
-const { Link } = Anchor;
+const { Sider } = Layout
+const { Link } = Anchor
 
 interface IMySiderProps {
   collapsed: boolean;
@@ -40,16 +40,16 @@ const links: Array<{ link: string, title: string }> = [
     link: '#contacts',
     title: 'Контакты',
   },
-];
+]
 
 export const MySider = ({ collapsed, toggle }: IMySiderProps) => {
   useEffect(() => {
     if (collapsed) {
-      document.body.classList.remove('no-scroll');
-      return;
+      document.body.classList.remove('no-scroll')
+      return
     }
-    document.body.classList.add('no-scroll');
-  }, [collapsed]);
+    document.body.classList.add('no-scroll')
+  }, [collapsed])
 
   return (
     <>
@@ -90,5 +90,5 @@ export const MySider = ({ collapsed, toggle }: IMySiderProps) => {
         </Anchor>
       </Sider>
     </>
-  );
-};
+  )
+}

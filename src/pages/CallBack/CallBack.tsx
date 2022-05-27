@@ -1,60 +1,60 @@
-import { Button, Form, Input, Select, Spin } from 'antd';
-import MaskedInput from 'antd-mask-input';
-import { ViewportContainer } from '../../components';
-import { useState } from 'react';
-import { PreferredMethodEnum } from './enums/PreferredMethodEnum';
-import { ICallbackForm } from './interfaces/ICallbackForm';
-import { emailService } from '../../services/api/EmailService';
-import classNames from 'classnames';
-import './CallBack.scss';
+import { Button, Form, Input, Select, Spin } from 'antd'
+import MaskedInput from 'antd-mask-input'
+import { ViewportContainer } from '../../components'
+import { useState } from 'react'
+import { PreferredMethodEnum } from './enums/PreferredMethodEnum'
+import { ICallbackForm } from './interfaces/ICallbackForm'
+import { emailService } from '../../services/api/EmailService'
+import classNames from 'classnames'
+import './CallBack.scss'
 
 
 export const CallBack = () => {
   const onSubmit = async (values: ICallbackForm) => {
-    setValidateTrigger('onChange');
+    setValidateTrigger('onChange')
     setFormState({
       ...formState,
       isError: false,
       isLoading: true,
-    });
+    })
     try {
-      await emailService.sendEmail(values, preferredMethod);
+      await emailService.sendEmail(values, preferredMethod)
       setFormState({
         isSent: true,
         isError: false,
         isLoading: false,
-      });
+      })
     } catch (e) {
       setFormState({
         ...formState,
         isError: true,
         isLoading: false,
-      });
+      })
     }
-  };
+  }
 
-  const [validateTrigger, setValidateTrigger] = useState<"onSubmit" | "onChange">('onSubmit');
+  const [validateTrigger, setValidateTrigger] = useState<'onSubmit' | 'onChange'>('onSubmit')
   const [preferredMethod, setPreferredMethod] = useState<PreferredMethodEnum>(
     PreferredMethodEnum.Phone,
-  );
+  )
   const [formState, setFormState] = useState({
     isLoading: false,
     isError: false,
     isSent: false,
-  });
+  })
 
   const clearError = () => {
     if (formState.isError) {
       setFormState({
         ...formState,
         isError: false,
-      });
+      })
     }
-  };
+  }
 
-  const { isLoading, isError, isSent } = formState;
+  const { isLoading, isError, isSent } = formState
 
-  const disabled = isLoading || isSent;
+  const disabled = isLoading || isSent
 
   return (
     <div
@@ -75,7 +75,7 @@ export const CallBack = () => {
               layout="vertical"
               onFinish={onSubmit}
               onFinishFailed={() => {
-                setValidateTrigger('onChange');
+                setValidateTrigger('onChange')
               }}
               onChange={clearError}
               autoComplete="off"
@@ -107,7 +107,7 @@ export const CallBack = () => {
                   placeholder="Выберите..."
                   value={preferredMethod}
                   onChange={(value) => {
-                    setPreferredMethod(value);
+                    setPreferredMethod(value)
                   }}
                   disabled={disabled}
                 >
@@ -187,7 +187,7 @@ export const CallBack = () => {
                 setFormState((value) => ({
                   ...value,
                   isSent: false,
-                }));
+                }))
               }}
             >
               Назад
@@ -199,5 +199,5 @@ export const CallBack = () => {
         </div>
       </ViewportContainer>
     </div>
-  );
-};
+  )
+}

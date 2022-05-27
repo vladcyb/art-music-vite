@@ -1,6 +1,6 @@
-import { standardGutter } from '../../shared/constants/gutter';
-import { Col, Row } from 'antd';
-import './Stage.scss';
+import { standardGutter } from '../../shared/constants/gutter'
+import { Col, Row } from 'antd'
+import './Stage.scss'
 
 
 export const Stage = () => (
@@ -63,4 +63,4 @@ export const Stage = () => (
       </Col>
     </Row>
   </div>
-);
+)

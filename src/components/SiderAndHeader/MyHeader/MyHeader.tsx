@@ -1,11 +1,11 @@
-import { Anchor, Button, Layout } from 'antd';
-import { Logo } from './Logo';
-import { MenuOutlined } from '@ant-design/icons';
-import React from 'react';
-import './MyHeader.scss';
+import { Anchor, Button, Layout } from 'antd'
+import { Logo } from './Logo'
+import { MenuOutlined } from '@ant-design/icons'
+import React from 'react'
+import './MyHeader.scss'
 
-const { Header } = Layout;
-const { Link } = Anchor;
+const { Header } = Layout
+const { Link } = Anchor
 
 interface IMyHeaderProps {
   onMenuClick: () => void;
@@ -38,4 +38,4 @@ export const MyHeader = ({ onMenuClick }: IMyHeaderProps) => (
       size="large"
     />
   </Header>
-);
+)

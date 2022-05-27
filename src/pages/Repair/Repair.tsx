@@ -1,6 +1,6 @@
-import { Col, Row } from 'antd';
-import { standardGutter } from '../../shared/constants/gutter';
-import './Repair.scss';
+import { Col, Row } from 'antd'
+import { standardGutter } from '../../shared/constants/gutter'
+import './Repair.scss'
 
 export const Repair = () => (
   <Row
@@ -28,4 +28,4 @@ export const Repair = () => (
       <img className="repair__img-1" src="/i/igcT_iZ-ELY.jpg" alt="" />
     </Col>
   </Row>
-);
+)

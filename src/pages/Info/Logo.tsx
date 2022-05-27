@@ -35,4 +35,4 @@ export const Logo = ({ className }: ILogoProps) => (
       </linearGradient>
     </defs>
   </svg>
-);
+)

@@ -1,10 +1,10 @@
-import React from 'react';
-import { Layout } from 'antd';
-import { Rent, Brands, CallBack, Contacts, Info, Payment, Repair, Stage } from './pages';
-import { SiderAndHeader } from './components';
-import './App.scss';
+import React from 'react'
+import { Layout } from 'antd'
+import { Rent, Brands, CallBack, Contacts, Info, Payment, Repair, Stage } from './pages'
+import { SiderAndHeader } from './components'
+import './App.scss'
 
-const { Content } = Layout;
+const { Content } = Layout
 
 export const App = () => (
   <Layout className="app">
@@ -22,4 +22,4 @@ export const App = () => (
       </div>
     </Content>
   </Layout>
-);
+)

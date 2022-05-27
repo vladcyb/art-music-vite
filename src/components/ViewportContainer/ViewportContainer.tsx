@@ -1,5 +1,5 @@
-import { PropsWithChildren, useEffect, useRef, useState } from 'react';
-import classNames from 'classnames';
+import { PropsWithChildren, useEffect, useRef, useState } from 'react'
+import classNames from 'classnames'
 
 interface IViewportContainerProps {
   className?: string;
@@ -9,35 +9,35 @@ export const ViewportContainer = ({
   children,
   className,
 }: PropsWithChildren<IViewportContainerProps>) => {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(false)
 
-  const ref = useRef<HTMLDivElement>(null);
-  const timeout = useRef<any>(null);
+  const ref = useRef<HTMLDivElement>(null)
+  const timeout = useRef<any>(null)
 
   const handleScroll = () => {
     if (!ref.current) {
-      return;
+      return
     }
     setIsVisible(ref.current.getBoundingClientRect()?.bottom - 64 > 0 &&
-      ref.current.getBoundingClientRect()?.top < window.innerHeight);
-  };
+      ref.current.getBoundingClientRect()?.top < window.innerHeight)
+  }
 
   const onScroll = () => {
     if (timeout.current) {
-      return;
+      return
     }
     timeout.current = window.setTimeout(() => {
-      handleScroll();
-      timeout.current = null;
-    }, 200);
-  };
+      handleScroll()
+      timeout.current = null
+    }, 200)
+  }
 
   useEffect(() => {
-    window.addEventListener('scroll', onScroll);
+    window.addEventListener('scroll', onScroll)
     return () => {
-      window.removeEventListener('scroll', onScroll);
-    };
-  }, []);
+      window.removeEventListener('scroll', onScroll)
+    }
+  }, [])
 
   return (
     <div className={classNames(
@@ -49,5 +49,5 @@ export const ViewportContainer = ({
     >
       {children}
     </div>
-  );
-};
+  )
+}
