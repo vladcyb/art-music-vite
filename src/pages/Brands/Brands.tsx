@@ -1,6 +1,6 @@
 import { Col, Row } from 'antd'
-import { standardGutter } from '../../shared/constants/gutter'
 import { ColProps } from 'antd/lib/grid/col'
+import { standardGutter } from '@shared/constants/gutter'
 import './Brands.scss'
 
 const brandsColProps: ColProps = {

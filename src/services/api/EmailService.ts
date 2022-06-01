@@ -1,6 +1,6 @@
-import { PreferredMethodEnum } from '../../pages/CallBack/enums/PreferredMethodEnum'
-import { ICallbackForm } from '../../pages/CallBack/interfaces/ICallbackForm'
 import axios from 'axios'
+import { PreferredMethodEnum } from '@pages/CallBack/enums/PreferredMethodEnum'
+import { ICallbackForm } from '@pages/CallBack/interfaces/ICallbackForm'
 
 let count = 0
 

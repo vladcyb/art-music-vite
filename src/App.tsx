@@ -1,7 +1,7 @@
 import React from 'react'
 import { Layout } from 'antd'
-import { Rent, Brands, CallBack, Contacts, Info, Payment, Repair, Stage } from './pages'
-import { SiderAndHeader } from './components'
+import { Rent, Brands, CallBack, Contacts, Info, Payment, Repair, Stage } from '@pages'
+import { SiderAndHeader } from '@components'
 import './App.scss'
 
 const { Content } = Layout

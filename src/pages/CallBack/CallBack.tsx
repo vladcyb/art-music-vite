@@ -1,11 +1,11 @@
-import { Button, Form, Input, Select, Spin } from 'antd'
-import MaskedInput from 'antd-mask-input'
-import { ViewportContainer } from '../../components'
 import { useState } from 'react'
+import { Button, Form, Input, Select, Spin } from 'antd'
+import classNames from 'classnames'
+import MaskedInput from 'antd-mask-input'
+import { ViewportContainer } from '@components'
+import { emailService } from '@services/api/EmailService'
 import { PreferredMethodEnum } from './enums/PreferredMethodEnum'
 import { ICallbackForm } from './interfaces/ICallbackForm'
-import { emailService } from '../../services/api/EmailService'
-import classNames from 'classnames'
 import './CallBack.scss'
 
 

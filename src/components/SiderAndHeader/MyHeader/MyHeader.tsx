@@ -1,7 +1,6 @@
 import { Anchor, Button, Layout } from 'antd'
-import { Logo } from './Logo'
 import { MenuOutlined } from '@ant-design/icons'
-import React from 'react'
+import { Logo } from './Logo'
 import './MyHeader.scss'
 
 const { Header } = Layout

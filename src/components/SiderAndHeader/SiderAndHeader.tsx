@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { MyHeader } from './MyHeader'
 import { MySider } from './MySider'
 

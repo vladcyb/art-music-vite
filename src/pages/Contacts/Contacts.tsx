@@ -1,7 +1,7 @@
 import { Col, Row } from 'antd'
-import { standardGutter } from '../../shared/constants/gutter'
 import { useEffect, useState } from 'react'
 import classNames from 'classnames'
+import { standardGutter } from '@shared/constants/gutter'
 import './Contacts.scss'
 
 export const Contacts = () => {

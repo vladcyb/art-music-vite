@@ -1,5 +1,5 @@
-import { standardGutter } from '../../shared/constants/gutter'
 import { Col, Row } from 'antd'
+import { standardGutter } from '@shared/constants/gutter'
 import './Stage.scss'
 
 
