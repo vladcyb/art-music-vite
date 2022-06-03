@@ -81,6 +81,15 @@
       justify-content: center;
       align-items: center;
     }
+
+    &.invisible {
+      transform: translateY(10px);
+      opacity: 0;
+    }
+
+    &.visible {
+      transition: all var(--animation-duration);
+    }
   }
 
   &_sent {
@@ -116,28 +125,5 @@
 
   &__select {
     width: 100%;
-  }
-
-  .viewport-container {
-    &_invisible {
-      opacity: 0;
-      transform: translateY(-25px);
-    }
-
-    &_visible {
-      animation: callback-animation var(--animation-duration) var(--animation-shape);
-    }
-  }
-}
-
-@keyframes callback-animation {
-  from {
-    opacity: 0;
-    transform: translateY(-25px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
   }
 }

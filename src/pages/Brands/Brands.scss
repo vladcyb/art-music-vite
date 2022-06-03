@@ -20,4 +20,12 @@
     width: 40%;
     margin: 0 auto;
   }
+
+  .invisible {
+    transform: scale(0.5);
+  }
+
+  .visible {
+    transition: transform var(--animation-duration);
+  }
 }
