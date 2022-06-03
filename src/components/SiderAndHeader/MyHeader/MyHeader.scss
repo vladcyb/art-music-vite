@@ -16,7 +16,6 @@
   align-items: center;
 
   &__menu-btn {
-    display: none !important;
     z-index: 101;
 
     &-icon {
@@ -24,17 +23,18 @@
     }
   }
 
-  &__desktop {
+  &__menu {
+    display: none;
     height: 64px;
   }
 
-  @include media ("<lg") {
-    &__desktop {
-      display: none;
+  @include media (">=lg") {
+    &__menu {
+      display: block;
     }
 
     &__menu-btn {
-      display: block !important;
+      visibility: hidden;
     }
   }
 
@@ -53,27 +53,9 @@
     text-align: center;
   }
 
-  &__logo-wrapper {
-    width: 50px;
-    height: var(--header-height);
-
-    a {
-      width: 50px;
-      height: var(--header-height);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-    }
-  }
-
   &__logo {
     width: 50px;
     display: block;
-    position: absolute;
-    top: 7px;
-    left: 50%;
-    transform: translateX(-50%);
   }
 
   .ant-anchor-link {

@@ -5,7 +5,7 @@ import './Info.scss'
 
 
 export const Info = () => (
-  <section className="info">
+  <section className="info" id="info">
     <h1 className="info__title">Art-Music</h1>
     <Row className="info__content"
       wrap
