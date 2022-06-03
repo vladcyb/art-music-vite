@@ -43,7 +43,7 @@ export const Stage = () => (
         align="middle"
       >
         <Col xs={24} md={10} xl={8} xxl={10}>
-          <img className="stage__img" src="/i/FU9UuCVgikc.jpg" alt="Схема сцены" />
+          <img className="stage__img" src="/i/stage-scheme.webp" alt="Схема сцены" />
         </Col>
         <Col xs={0} md={1} />
         <Col xs={24} md={12} xl={13}>

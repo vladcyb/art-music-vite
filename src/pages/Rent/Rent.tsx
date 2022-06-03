@@ -17,7 +17,7 @@ export const Rent = () => (
           <h1 className="rent__title">Аренда и сборка сцены</h1>
         </Col>
         <Col xs={16} md={10} xl={8} xxl={8}>
-          <img className="rent__img" src="/i/noGKu5ogN9Q.jpg" alt="" />
+          <img className="rent__img" src="/i/stage.webp" alt="" />
         </Col>
         <Col xs={0} md={1} />
         <Col xs={24} md={12} xl={13}>

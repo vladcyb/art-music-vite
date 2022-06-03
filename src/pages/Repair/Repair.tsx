@@ -28,7 +28,7 @@ export const Repair = () => (
           </ul>
         </Col>
         <Col xs={24} md={10}>
-          <img className="repair__img-1" src="/i/igcT_iZ-ELY.jpg" alt="" />
+          <img className="repair__img" src="/i/repair.webp" alt="" />
         </Col>
       </Row>
     </ViewportContainer>
