@@ -43,7 +43,7 @@
   --c-white-2: #eee;
   --c-black: #000;
   --c-light-blue: #40a9ff;
-  --c-light-bg: rgba(255, 255, 255, 0.7);
+  --c-light-bg: rgba(255, 255, 255, 0.8);
   --c-light-blue-3: #005ba6;
   --c-blue: #001529;
   --c-blue-2: #002952;
@@ -64,14 +64,12 @@ body {
     left: 0;
     right: 0;
     height: 100vh;
-    background-image: url("./assets/i/pexels-cottonbro-xl-portrait.webp");
+    background-image: url("./assets/i/bg.webp");
     background-size: cover;
     background-attachment: scroll;
     background-repeat: no-repeat;
     background-position: center 60%;
     z-index: -1;
-    //filter: blur(2px) contrast(0.8);
-    filter: hue-rotate(290deg) contrast(0.6) blur(2px) brightness(0.8);
   }
 }
 
