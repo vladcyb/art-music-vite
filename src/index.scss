@@ -6,30 +6,30 @@
   /* variables */
   --header-height: 64px;
   --content-padding-inline: 10px;
-  --content-padding-block: 32px;
+  --content-padding-block: 24px;
   --animation-duration: 400ms;
   --animation-shape: ease-out;
   --font-size: 14px;
 
-  @media screen and (min-width: $breakpoint-sm) {
+  @include media(">=sm") {
     --content-padding-inline: 24px;
+    --content-padding-block: 32px;
+  }
+
+  @include media(">=md") {
     --content-padding-block: 64px;
   }
 
-  @media screen and (min-width: $breakpoint-md) {
-    --content-padding-block: 64px;
-  }
-
-  @media screen and (min-width: $breakpoint-lg) {
+  @include media(">=lg") {
     --content-padding-inline: 32px;
     --font-size: 16px;
   }
 
-  @media screen and (min-width: $breakpoint-xl) {
+  @include media(">=xl") {
     --content-padding-inline: 64px;
   }
 
-  @media screen and (min-width: $breakpoint-xxl) {
+  @include media(">=xxl") {
     --content-padding-inline: 200px;
     --font-size: 18px;
   }

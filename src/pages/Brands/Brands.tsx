@@ -51,7 +51,7 @@ export const Brands = () => (
         <li>ADJ</li>
         <li>Highendled</li>
         <li>Robe</li>
-        <li>XLine Light</li>
+        <li>XLine&nbsp;Light</li>
         <li>Imlight</li>
         <li>CHAUVET-PRO</li>
         <li>TAMA</li>
@@ -62,7 +62,7 @@ export const Brands = () => (
       <ul className="brands__list">
         <li>GATOR</li>
         <li>ONSTAGE</li>
-        <li>PLANET WAVES</li>
+        <li>PLANET&nbsp;WAVES</li>
         <li>PROEL</li>
         <li>TEMPO</li>
         <li>AMPHENOL</li>

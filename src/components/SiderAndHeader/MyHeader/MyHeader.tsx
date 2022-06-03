@@ -28,7 +28,6 @@ export const MyHeader = ({ onMenuClick }: IMyHeaderProps) => (
         <Link className="my-header__item my-header__contacts" href="#contacts" title="Контакты" />
       </Anchor>
     </div>
-    <div className="my-header__title">Art-Music</div>
     <Button
       className="my-header__menu-btn"
       icon={<MenuOutlined className="my-header__menu-btn-icon" />}

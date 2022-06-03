@@ -4,13 +4,12 @@
 .info {
   font-size: 14px;
   text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.8);
-  height: calc(100vh - var(--header-height));
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   color: white;
+  padding: var(--content-padding-block) 0;
 
   &::before {
     content: "";
@@ -26,10 +25,6 @@
     filter: contrast(0.8) brightness(0.6);
   }
 
-  @include media("<md") {
-    padding: 24px 0;
-  }
-
   @include media(">=sm") {
     font-size: 16px;
   }
@@ -42,17 +37,18 @@
     font-size: 20px;
   }
 
+  @include media(">=xl", "landscape") {
+    min-height: calc(100vh - var(--header-height));
+    justify-content: center;
+  }
+
   @include media(">=xxl") {
     font-size: 22px;
   }
 
   &__title {
-    @include media("<lg") {
-      display: none;
-    }
-
     text-align: center;
-    font-size: 48px;
+    font-size: 30px;
     position: relative;
     line-height: 100%;
     margin: 0;
@@ -64,30 +60,24 @@
       color: red;
     }
 
-    @include media("<xxl") {
+    @include media(">=md") {
+      font-size: 40px;
+      padding-bottom: 32px;
+    }
+
+    @include media(">=lg") {
       font-size: 44px;
     }
 
-    @include media("<xl") {
-      font-size: 40px;
-    }
-
-    @include media("<md") {
-      font-size: 36px;
-    }
-
-    @include media("<sm") {
-      font-size: 30px;
+    @include media(">=xl") {
+      font-size: 56px;
+      padding-bottom: 56px;
     }
   }
 
   &__content {
     p:last-child {
       margin: 0;
-    }
-
-    @include media(">=md") {
-      justify-content: flex-start !important;
     }
 
     @include media(">=xl") {
@@ -97,11 +87,22 @@
 
   &__logo-wrapper {
     text-align: center;
+
+    @include media(">=md") {
+      padding: 10px 0;
+    }
   }
 
   &__logo {
     width: 100%;
-    max-width: 200px;
     filter: drop-shadow(0 0 16px rgba(255, 255, 255, 1));
+
+    @include media(">=md") {
+      max-width: 120px;
+    }
+
+    @include media(">=lg") {
+      max-width: 400px;
+    }
   }
 }
