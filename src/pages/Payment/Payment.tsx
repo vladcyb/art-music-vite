@@ -5,10 +5,9 @@ import './Payment.scss'
 
 
 export const Payment = () => (
-  <section className="payment">
+  <section className="payment" id="payment">
     <ViewportContainer className="payment__content">
       <Row
-        id="payment"
         justify="center"
         gutter={{ ...standardGutter }}
       >

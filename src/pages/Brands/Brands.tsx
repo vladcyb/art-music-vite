@@ -12,14 +12,9 @@ const brandsColProps: ColProps = {
 }
 
 export const Brands = () => (
-  <section className="brands">
+  <section className="brands" id="brands">
     <ViewportContainer>
-      <Row
-        id="brands"
-        justify="center"
-        gutter={{ ...standardGutter }}
-      >
-
+      <Row justify="center" gutter={{ ...standardGutter }}>
         <Col xs={24}>
           <h1 className="brands__title">Наши бренды</h1>
         </Col>

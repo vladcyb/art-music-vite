@@ -5,10 +5,9 @@ import './Rent.scss'
 
 
 export const Rent = () => (
-  <section className="rent">
+  <section className="rent" id="rent">
     <ViewportContainer className="rent__content">
       <Row
-        id="rent"
         justify="center"
         align="middle"
         gutter={{ ...standardGutter }}

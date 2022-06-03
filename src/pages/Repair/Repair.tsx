@@ -4,11 +4,10 @@ import './Repair.scss'
 import { ViewportContainer } from '@components'
 
 export const Repair = () => (
-  <section className="repair">
+  <section className="repair" id="repair">
     <ViewportContainer>
       <Row
         className="repair__content"
-        id="repair"
         wrap
         gutter={{ ...standardGutter }}
         justify="center"
