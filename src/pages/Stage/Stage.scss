@@ -3,7 +3,6 @@
 @use "../../assets/scss/vars" as *;
 
 .stage {
-  @include box-shadow-inset();
   @include white-text();
 
   padding: var(--content-padding-block) var(--content-padding-inline);

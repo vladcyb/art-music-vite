@@ -2,7 +2,6 @@
 @use "../../assets/scss/mixins" as *;
 
 .brands {
-  @include box-shadow-inset();
   @include white-text();
 
   padding: var(--content-padding-block) var(--content-padding-inline);

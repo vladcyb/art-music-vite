@@ -1,7 +1,10 @@
 @use './node_modules/include-media/dist/include-media' as *;
 @use '../../assets/scss/vars' as *;
+@use '../../assets/scss/mixins' as *;
 
 .info {
+  @include box-shadow();
+
   font-size: 14px;
   text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.8);
   position: relative;

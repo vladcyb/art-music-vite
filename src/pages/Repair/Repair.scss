@@ -5,6 +5,8 @@
 .repair {
 
   &__content {
+    @include box-shadow();
+
     padding: var(--content-padding-block) var(--content-padding-inline);
     background: var(--c-light-bg);
   }

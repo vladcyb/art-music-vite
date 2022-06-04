@@ -3,8 +3,6 @@
 @use "../../assets/scss/vars" as *;
 
 .callback {
-  @include box-shadow-inset();
-
   padding: var(--content-padding-block) var(--content-padding-inline);
 
   &__card {
