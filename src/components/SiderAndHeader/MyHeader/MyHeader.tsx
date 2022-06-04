@@ -12,7 +12,7 @@ interface IMyHeaderProps {
 
 export const MyHeader = ({ onMenuClick }: IMyHeaderProps) => (
   <Header className="my-header">
-    <a href="/">
+    <a href="#info">
       <Logo className="my-header__logo" />
     </a>
     <div className="my-header__menu">
