@@ -17,9 +17,7 @@ export const App = () => (
       <Repair />
       <CallBack />
       <Payment />
-      <div className="app__perspective">
-        <Contacts />
-      </div>
+      <Contacts />
     </Content>
   </Layout>
 )
