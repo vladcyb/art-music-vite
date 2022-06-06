@@ -42,7 +42,7 @@ export const ViewportContainer = ({
   return (
     <div className={classNames(
       'viewport-container',
-      isVisible ? 'viewport-container_visible' : 'viewport-container_invisible',
+      isVisible ? 'visible' : 'invisible',
       className,
     )}
     ref={ref}

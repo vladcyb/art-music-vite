@@ -6,30 +6,30 @@
   /* variables */
   --header-height: 64px;
   --content-padding-inline: 10px;
-  --content-padding-block: 32px;
+  --content-padding-block: 24px;
   --animation-duration: 400ms;
   --animation-shape: ease-out;
   --font-size: 14px;
 
-  @media screen and (min-width: $breakpoint-sm) {
+  @include media(">=sm") {
     --content-padding-inline: 24px;
+    --content-padding-block: 32px;
+  }
+
+  @include media(">=md") {
     --content-padding-block: 64px;
   }
 
-  @media screen and (min-width: $breakpoint-md) {
-    --content-padding-block: 64px;
-  }
-
-  @media screen and (min-width: $breakpoint-lg) {
+  @include media(">=lg") {
     --content-padding-inline: 32px;
     --font-size: 16px;
   }
 
-  @media screen and (min-width: $breakpoint-xl) {
+  @include media(">=xl") {
     --content-padding-inline: 64px;
   }
 
-  @media screen and (min-width: $breakpoint-xxl) {
+  @include media(">=xxl") {
     --content-padding-inline: 200px;
     --font-size: 18px;
   }
@@ -43,7 +43,7 @@
   --c-white-2: #eee;
   --c-black: #000;
   --c-light-blue: #40a9ff;
-  --c-light-bg: rgba(255, 255, 255, 0.7);
+  --c-light-bg: rgba(255, 255, 255, 0.8);
   --c-light-blue-3: #005ba6;
   --c-blue: #001529;
   --c-blue-2: #002952;
@@ -64,14 +64,12 @@ body {
     left: 0;
     right: 0;
     height: 100vh;
-    background-image: url("./assets/i/pexels-cottonbro-xl-portrait.webp");
+    background-image: url("./assets/i/bg.webp");
     background-size: cover;
     background-attachment: scroll;
     background-repeat: no-repeat;
     background-position: center 60%;
     z-index: -1;
-    //filter: blur(2px) contrast(0.8);
-    filter: hue-rotate(290deg) contrast(0.6) blur(2px) brightness(0.8);
   }
 }
 

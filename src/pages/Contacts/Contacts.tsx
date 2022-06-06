@@ -23,9 +23,11 @@ export const Contacts = () => {
     <footer
       className={classNames('contacts', {
         contacts_highlighted: highlighted,
-      })}>
+      })}
+      id="contacts"
+    >
       <Row
-        id="contacts"
+        className="contacts__content"
         justify="center"
         align="middle"
         gutter={{ ...standardGutter }}

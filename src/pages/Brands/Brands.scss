@@ -2,7 +2,6 @@
 @use "../../assets/scss/mixins" as *;
 
 .brands {
-  @include box-shadow-inset();
   @include white-text();
 
   padding: var(--content-padding-block) var(--content-padding-inline);
@@ -19,5 +18,13 @@
   &__list {
     width: 40%;
     margin: 0 auto;
+  }
+
+  .invisible {
+    transform: scale(0.5);
+  }
+
+  .visible {
+    transition: transform var(--animation-duration);
   }
 }

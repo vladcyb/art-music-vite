@@ -3,10 +3,15 @@
 @use "../../assets/scss/vars" as *;
 
 .repair {
-  padding: var(--content-padding-block) var(--content-padding-inline);
-  background: var(--c-light-bg);
 
-  &__img-1 {
+  &__content {
+    @include box-shadow();
+
+    padding: var(--content-padding-block) var(--content-padding-inline);
+    background: var(--c-light-bg);
+  }
+
+  &__img {
     @include box-shadow();
 
     width: 100%;
@@ -15,5 +20,14 @@
     @include media("<md") {
       margin-top: 32px;
     }
+  }
+
+  .invisible {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+
+  .visible {
+    transition: all var(--animation-duration);
   }
 }

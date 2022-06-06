@@ -3,8 +3,21 @@
 @use "../../assets/scss/vars" as *;
 
 .rent {
-  padding: var(--content-padding-block) var(--content-padding-inline);
-  background: var(--c-light-bg);
+  &__content {
+    @include box-shadow();
+
+    padding: var(--content-padding-block) var(--content-padding-inline);
+    background: var(--c-light-bg);
+
+    &.invisible {
+      transform: translateY(10px);
+      opacity: 0;
+    }
+
+    &.visible {
+      transition: all var(--animation-duration);
+    }
+  }
 
   &__img {
     @include box-shadow();
