@@ -5,8 +5,8 @@ import './Rent.scss'
 
 
 export const Rent = () => (
-  <section className="rent" id="rent">
-    <ViewportContainer className="rent__content">
+  <ViewportContainer className="rent" id="rent">
+    <section className="rent__content">
       <Row
         justify="center"
         align="middle"
@@ -47,6 +47,6 @@ export const Rent = () => (
           </p>
         </Col>
       </Row>
-    </ViewportContainer>
-  </section>
+    </section>
+  </ViewportContainer>
 )

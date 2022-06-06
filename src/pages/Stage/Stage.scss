@@ -86,13 +86,4 @@
     text-align: center;
     list-style-type: none;
   }
-
-  .invisible {
-    transform: translateY(10px);
-    opacity: 0;
-  }
-
-  .visible {
-    transition: all var(--animation-duration);
-  }
 }

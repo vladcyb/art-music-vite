@@ -1,5 +1,6 @@
 @use "../../assets/scss/vars" as *;
 @use "../../assets/scss/mixins" as *;
+@use "../../../node_modules/include-media" as *;
 
 .brands {
   @include white-text();
@@ -18,13 +19,5 @@
   &__list {
     width: 40%;
     margin: 0 auto;
-  }
-
-  .invisible {
-    transform: scale(0.5);
-  }
-
-  .visible {
-    transition: transform var(--animation-duration);
   }
 }

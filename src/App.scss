@@ -14,3 +14,14 @@
     z-index: -1;
   }
 }
+
+
+.viewport-container {
+  &_invisible > * {
+    transform: scale(0.5);
+  }
+
+  &_visible > * {
+    transition: transform var(--animation-duration);
+  }
+}

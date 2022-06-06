@@ -5,8 +5,8 @@ import './Payment.scss'
 
 
 export const Payment = () => (
-  <section className="payment" id="payment">
-    <ViewportContainer className="payment__content">
+  <ViewportContainer className="payment" id="payment">
+    <section className="payment__content">
       <Row
         justify="center"
         gutter={{ ...standardGutter }}
@@ -47,6 +47,6 @@ export const Payment = () => (
           </ul>
         </Col>
       </Row>
-    </ViewportContainer>
-  </section>
+    </section>
+  </ViewportContainer>
 )

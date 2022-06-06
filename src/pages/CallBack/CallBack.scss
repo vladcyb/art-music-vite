@@ -79,15 +79,6 @@
       justify-content: center;
       align-items: center;
     }
-
-    &.invisible {
-      transform: translateY(10px);
-      opacity: 0;
-    }
-
-    &.visible {
-      transition: all var(--animation-duration);
-    }
   }
 
   &_sent {
@@ -96,7 +87,7 @@
       opacity: 1;
     }
 
-    .callback__card-content {
+    .callback__card {
       opacity: 0;
     }
   }
