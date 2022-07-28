@@ -3,12 +3,10 @@
 @use "../../assets/scss/vars" as *;
 
 .rent {
-  &__content {
-    @include box-shadow();
+  @include box-shadow();
 
-    padding: var(--content-padding-block) var(--content-padding-inline);
-    background: var(--c-light-bg);
-  }
+  padding: var(--content-padding-block) var(--content-padding-inline);
+  background: var(--c-light-bg);
 
   &__img {
     @include box-shadow();

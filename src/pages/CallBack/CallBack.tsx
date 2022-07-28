@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { Button, Form, Input, Select, Spin } from 'antd'
 import classNames from 'classnames'
 import MaskedInput from 'antd-mask-input'
-import { ViewportContainer } from '@components'
 import { emailService } from '@services/api/EmailService'
 import { PreferredMethodEnum } from './enums/PreferredMethodEnum'
 import { ICallbackForm } from './interfaces/ICallbackForm'
@@ -57,7 +56,7 @@ export const CallBack = () => {
   const disabled = isLoading || isSent
 
   return (
-    <ViewportContainer
+    <div
       className={classNames('callback', {
         'callback_error': isError,
         'callback_sent': isSent,
@@ -134,7 +133,7 @@ export const CallBack = () => {
               ]}
             >
               <MaskedInput
-                mask="(111) 111-11-11"
+                mask="(000) 000-00-00"
                 prefix="+7"
                 autoComplete="new-password"
                 disabled={disabled}
@@ -196,6 +195,6 @@ export const CallBack = () => {
       <div className="callback__card-spin">
         <Spin size="large" />
       </div>
-    </ViewportContainer>
+    </div>
   )
 }
