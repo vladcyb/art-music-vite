@@ -17,7 +17,7 @@ export class EmailService {
       data.phone = 'Нет'
     }
 
-    if (process.env.NODE_ENV === 'development') {
+    if (process.env.NODE_ENV !== 'production') {
       return new Promise<any>((resolve, reject) => {
         setTimeout(() => {
           if (count++ % 2) {
