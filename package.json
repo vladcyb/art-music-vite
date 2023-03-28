@@ -10,12 +10,12 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@ant-design/icons": "^4.7.0",
-    "antd": "^4.20.6",
-    "antd-mask-input": "^2.0.7",
-    "axios": "^0.27.2",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "@ant-design/icons": "4.7.0",
+    "antd": "4.20.6",
+    "antd-mask-input": "2.0.7",
+    "axios": "0.27.2",
+    "react": "18.0.0",
+    "react-dom": "18.0.0"
   },
   "eslintConfig": {
     "extends": [
